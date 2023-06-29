@@ -7,10 +7,7 @@ class Jogo:
         self.console = console
         
 
-
 jogos = []
-
-
 
 app = Flask(__name__)
 
@@ -41,8 +38,6 @@ def deletar(nome):
             jogos.remove(jogo)
             break
     return redirect('/')
-
-
 
 
 app.run(debug=True)
